@@ -1,0 +1,95 @@
+/*** ESSENTIAL STYLES ***/
+.ico-menu, .ico-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.ico-menu li {
+	position: relative;
+}
+.ico-menu ul {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 99;
+}
+.ico-menu > li {
+	float: left;
+}
+.ico-menu li:hover > ul,
+.ico-menu li.sfHover > ul {
+	display: block;
+}
+
+.ico-menu a {
+	display: block;
+	position: relative;
+}
+.ico-menu ul ul {
+	top: 0;
+	left: 100%;
+}
+
+
+/*** DEMO SKIN ***/
+.ico-menu {
+	font-family: 'raleway',arial, helvetica;
+    font-size: 12px;
+	font-weight:bold;
+
+	float: left;
+	margin-bottom: 1em;
+	text-align:left;
+	text-transform:uppercase;
+    letter-spacing : 0.2em;
+}
+.ico-menu ul {
+
+	min-width: 12em; /* allow long menu items to determine submenu width */
+	*width: 12em; /* no auto sub width for IE7, see white-space comment below */
+	font-size: 10px;
+	font-weight:normal;
+
+	top:-200px;
+    padding-bottom: 20px;
+}
+.ico-menu li:hover ul {
+	top:100%;
+}
+.ico-menu a {
+
+	padding: .75em 1em;
+	text-decoration: none;
+
+	zoom: 1; /* IE7 */
+}
+.ico-menu a {
+	color: #ababab;
+}
+.ico-menu ul a {
+	color:#999;
+}
+.ico-menu a:hover,
+.ico-menu .current-menu-item > a{
+	color: #89f2b9;
+}
+.ico-menu li {
+
+	white-space: nowrap; /* no need for Supersubs plugin */
+	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
+
+}
+.ico-menu ul li {
+/* 	background: #AABDE6; */
+}
+.ico-menu ul a {
+	padding: 0.2em 1em;
+}
+.ico-menu ul ul li {
+
+}
+.ico-menu li:hover,
+.ico-menu li.sfHover {
+
+}
