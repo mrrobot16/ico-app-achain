@@ -3,13 +3,15 @@
   <head>
     <title>IcoAppAc</title>
     <%= csrf_meta_tags %>
-
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="stylesheet" id="googlefonts-css" href="//fonts.googleapis.com/css?family=Bentham%7CPinyon+Script%7CBitter%3A400%2C700%7CRaleway%3A300%2C400%2C500%2C600%7CSacramento%7CLato%3A300%2C400%2C900%7COpen+Sans%3A400%2C700%2C800%7CPacifico%7CLobster%7CRoboto%3A400%2C900%2C700%7COswald%3A400%2C700&amp;ver=4.8.2" type="text/css" media="all">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
   </head>
 
   <body>
-    <%= render 'nav' %>
+    <%= render 'layouts/nav' %>
     <%= yield %>
   </body>
 </html>
