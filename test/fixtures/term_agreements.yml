@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shareholder_address: MyString
+  term_accepted: MyString
+  terms_description: MyText
+
+two:
+  shareholder_address: MyString
+  term_accepted: MyString
+  terms_description: MyText
