@@ -1,5 +1,6 @@
 var termAgreements = document.getElementById('terms')
 var checkboxes = document.querySelectorAll("input[type='checkbox']")
+
 var submitBtn = document.getElementById('terms-btn')
 var boxStatus = []
 if (termAgreements) {
@@ -14,7 +15,7 @@ if (termAgreements) {
 
 function scrollSpy(element){
   termAgreements.addEventListener('scroll', function(event){
-    if(event.target.scrollTop > 11145){
+    if(event.target.scrollTop > event.target.scrollHeight*(0.95)){
       checkboxes.forEach(function(checkbox){
         checkbox.disabled=false
       })
@@ -22,6 +23,6 @@ function scrollSpy(element){
   })
 }
 
-function enableSubmit(){
-  submitBtn.disabled=false
-}
+// function enableSubmit(){
+//   submitBtn.disabled=false
+// }

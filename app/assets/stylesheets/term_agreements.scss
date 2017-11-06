@@ -1,12 +1,42 @@
 .innerTerms {
-    border: 2px solid #318aa0;
-    border-radius: 5px;
-    background: #e9f5f8;
-    padding: 3% 4%;
-    max-height: 240px;
-    overflow: auto;
-    font-size: 1.07em;
+  border: 2px solid #318aa0;
+  border-radius: 5px;
+  background: #e9f5f8;
+  padding: 3% 4%;
+  max-height: 240px;
+  overflow: auto;
+  font-size: 1.07em;
 }
 
-.term-text {
+.terms-text {
+  padding-bottom: 5%;
+  // width: 575px;
+  width: 50%;
+}
+
+.termsAndConditions {
+  font-size: .9rem;
+  color: #175a69;
+}
+
+.form-check-input {
+  margin-top: -2.56%;
+  margin-left: -1.25rem;
+}
+
+.terms-form {
+  form {
+    // width: 575px;
+  }
+
+  input[type="submit"]{
+    width: 100%;
+  }
+}
+
+.form-group {
+  padding-left: 3.5%;
+  p {
+    margin:0;
+  }
 }

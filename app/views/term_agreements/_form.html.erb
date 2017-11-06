@@ -1,42 +1,36 @@
-  <%= form_with(model: term_agreement, local: true) do |form| %>
-    <% if term_agreement.errors.any? %>
-      <!-- <div id="error_explanation">
-        <h2><%= pluralize(term_agreement.errors.count, "error") %> prohibited this term_agreement from being saved:</h2>
+  <h1>Auditchain Token Purchase Agreement</h1>
+  <p>Please review and confirm the GRID Token Purchase Agreement to proceed with the GRID Token Sale.</p>
+    <%= form_with(model: term_agreement, local: true, class:'terms-form') do |form| %>
+    <div class="terms-text">
+          <%= render 'terms-text', term_agreement: @term_agreement %>
+    </div>
+        <div class="form-group">
+          <p>I have read and I agree to the Sale Terms of the PayPie Token Sale.</p>
+          <!-- <%= form.label :check_one %> -->
+          <%= form.check_box :check_one, id: :check_one, disabled: true, class:'form-check-input' %>
+        </div>
+        <div class="form-group">
+          <p>I understand and agree that I must use a valid ERC20 compatible wallet address.</p>
+          <!-- <%= form.label :check_two %> -->
+          <%= form.check_box :check_two, id: :check_two, disabled: true, class:'form-check-input' %>
+        </div>
+        <div class="form-group">
+          <p>I understand and agree that I am legally 18 years of age or older.</p>
+          <!-- <%= form.label :check_three %> -->
+          <%= form.check_box :check_three, id: :check_three, disabled: true, class:'form-check-input' %>
+        </div>
+        <div class="form-group">
+          <p>I understand and agree that the address I use must not be an exchange address.</p>
+          <!-- <%= form.label "Check Four" %> -->
+          <%= form.check_box :check_three, id: :check_three, disabled: true, class:'form-check-input' %>
+        </div>
 
-        <ul>
-        <% term_agreement.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-        </ul>
-      </div> -->
+      <div class="form-group">
+        <!-- <%= form.label :shareholder_address %> -->
+        <%= form.text_field :shareholder_address, id: :term_agreement_shareholder_address, class:'form-control' %>
+      </div>
+
+        <div class="actions">
+          <%= form.submit(id:'terms-btn', class:'btn btn-primary', disabled:true, value:'Join our Sale') %>
+        </div>
     <% end %>
-    <h1>Auditchain Token Sale Terms</h1>
-    <div class='terms'>
-      <div class="term-text">
-            <%= render 'terms-text', term_agreement: @term_agreement %>
-      </div>
-      <div class="field">
-        <p>Text fill with terms number 1</p>
-        <%= form.label :check_one %>
-        <%= form.check_box :check_one, id: :check_one, disabled: true %>
-      </div>
-      <div class="field">
-        <p>Text fill with terms number 2</p>
-        <%= form.label :check_two %>
-        <%= form.check_box :check_two, id: :check_two, disabled: true %>
-      </div>
-      <div class="field">
-        <p>Text fill with terms number 3</p>
-        <%= form.label :check_three %>
-        <%= form.check_box :check_three, id: :check_three, disabled: true %>
-      </div>
-    </div>
-    <div class="field">
-      <%= form.label :shareholder_address %>
-      <%= form.text_field :shareholder_address, id: :term_agreement_shareholder_address %>
-    </div>
-
-    <div class="actions">
-      <%= form.submit(id:'terms-btn',disabled:true) %>
-    </div>
-  <% end %>
