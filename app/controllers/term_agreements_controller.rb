@@ -11,8 +11,10 @@ class TermAgreementsController < ApplicationController
     shareholder_address = term_agreement_params[:shareholder_address]
     @term_agreement = TermAgreement.find_by_shareholder_address(shareholder_address)
     if @term_agreement
+      p "IF IF I F"
       cookies.encrypted[:accepted_terms] = true
       @term_agreement.counter = @term_agreement.counter + 1
+      @term_agreement.save
       redirect_to '/contract'
     else
       @term_agreement = TermAgreement.new(shareholder_address: shareholder_address)
