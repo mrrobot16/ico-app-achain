@@ -1,40 +1,39 @@
 <%= form_with(model: term_agreement, local: true, class:'terms-form') do |form| %>
-  <div>
-    <div class="form-group">
-      <p>I have read and I agree to the Sale Terms of the AuditChain Token Sale.</p>
-      <%= form.label :check_one do %>
+  <fieldset class="form-group">
+    <div class="form-check">
+      <%= form.label :check_one, class:'form-check-label' do %>
       <%= form.check_box :check_one, id: :check_one, disabled: true, class:'form-check-input' %>
+      I have read and I agree to the Sale Terms of the AuditChain Token Sale.
       <% end %>
     </div>
 
-    <div class="form-group">
-      <p>I understand and agree that I must use a valid ERC20 compatible wallet address.</p>
-      <%= form.label :check_two do %>
+    <div class="form-check">
+      <%= form.label :check_two, class:'form-check-label' do %>
       <%= form.check_box :check_two, id: :check_two, disabled: true, class:'form-check-input' %>
+      I understand and agree that I must use a valid ERC20 compatible wallet address.
       <% end %>
     </div>
-    <div class="form-group">
-      <p>I understand and agree that I am legally 18 years of age or older.</p>
-      <%= form.label :check_three do %>
-      <%= form.check_box :check_three, id: :check_three, disabled: true, class:'form-check-input' %>
-      <% end %>
-    </div>
-    <div class="form-group">
 
-      <%= form.label "Check Four" do %>
-      <p>I understand and agree that the address I use must not be an exchange address.</p>
+    <div class="form-check">
+      <%= form.label :check_three, class:'form-check-label' do %>
       <%= form.check_box :check_three, id: :check_three, disabled: true, class:'form-check-input' %>
+      I understand and agree that I am legally 18 years of age or older.
       <% end %>
     </div>
+
+    <div class="form-check">
+      <%= form.label "Check Four", class:'form-check-label' do %>
+      <%= form.check_box :check_three, id: :check_three, disabled: true, class:'form-check-input' %>
+      I understand and agree that the address I use must not be an exchange address.
+      <% end %>
+    </div>
+  </fieldset>
+
+  <div class="form-group">
+    <label>Shareholder address</label>
+    <small class="form-text text-muted">Without the input of your address we won't honor the token</small>
+    <%= form.text_field :shareholder_address, id: :term_agreement_shareholder_address, class:'form-control' %>
   </div>
-<div class="form-group">
-  <!-- <%= form.label :shareholder_address %> -->
-  <label>Shareholder address</label>
-  <small class="form-text text-muted">Without the input of your address we won't honor the token</small>
-  <%= form.text_field :shareholder_address, id: :term_agreement_shareholder_address, class:'form-control' %>
-</div>
 
-  <div class="actions">
     <%= form.submit(id:'terms-btn', class:'btn btn-primary', disabled:true, value:'Join our Sale') %>
-  </div>
 <% end %>
