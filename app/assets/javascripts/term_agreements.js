@@ -1,22 +1,24 @@
-var termAgreements = document.getElementById('terms')
-var checkboxes = document.querySelectorAll("input[type='checkbox']")
-var submitBtn = document.getElementById('terms-btn')
-var boxStatus = []
-if (termAgreements) scrollSpy(termAgreements)
+const termAgreements = document.getElementById('terms')
+const submitBtn = document.getElementById('terms-btn')
+const checkboxes = Array.from(document.querySelectorAll("input[type='checkbox']"))
+const boxStatus = []
+if (termAgreements) scrollSpy()
 if(checkboxes) checkBoxChecked()
 
-function scrollSpy(element){
-  termAgreements.addEventListener('scroll', function(event){
-    if(event.target.scrollTop > event.target.scrollHeight*(0.95)){
-      checkboxes.forEach(function(checkbox){
-        checkbox.disabled=false
-      })
-    }
-  })
+function scrollSpy(){
+  termAgreements.addEventListener('scroll', finishedScroll)
+}
+
+function finishedScroll(event){
+  if(event.target.scrollTop > event.target.scrollHeight*(0.95)){
+    checkboxes.map(function(checkbox){
+      checkbox.disabled=false
+    })
+  }
 }
 
 function checkBoxChecked(){
-  checkboxes.forEach(function(checkbox){
+  checkboxes.map(function(checkbox){
     checkbox.addEventListener('click', checkBoxes)
   })
 }
