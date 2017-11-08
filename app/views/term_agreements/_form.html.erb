@@ -1,36 +1,40 @@
-  <h1>Auditchain Token Purchase Agreement</h1>
-  <p>Please review and confirm the GRID Token Purchase Agreement to proceed with the GRID Token Sale.</p>
-    <%= form_with(model: term_agreement, local: true, class:'terms-form') do |form| %>
-    <div class="terms-text">
-          <%= render 'terms-text', term_agreement: @term_agreement %>
+<%= form_with(model: term_agreement, local: true, class:'terms-form') do |form| %>
+  <div>
+    <div class="form-group">
+      <p>I have read and I agree to the Sale Terms of the AuditChain Token Sale.</p>
+      <%= form.label :check_one do %>
+      <%= form.check_box :check_one, id: :check_one, disabled: true, class:'form-check-input' %>
+      <% end %>
     </div>
-        <div class="form-group">
-          <p>I have read and I agree to the Sale Terms of the PayPie Token Sale.</p>
-          <!-- <%= form.label :check_one %> -->
-          <%= form.check_box :check_one, id: :check_one, disabled: true, class:'form-check-input' %>
-        </div>
-        <div class="form-group">
-          <p>I understand and agree that I must use a valid ERC20 compatible wallet address.</p>
-          <!-- <%= form.label :check_two %> -->
-          <%= form.check_box :check_two, id: :check_two, disabled: true, class:'form-check-input' %>
-        </div>
-        <div class="form-group">
-          <p>I understand and agree that I am legally 18 years of age or older.</p>
-          <!-- <%= form.label :check_three %> -->
-          <%= form.check_box :check_three, id: :check_three, disabled: true, class:'form-check-input' %>
-        </div>
-        <div class="form-group">
-          <p>I understand and agree that the address I use must not be an exchange address.</p>
-          <!-- <%= form.label "Check Four" %> -->
-          <%= form.check_box :check_three, id: :check_three, disabled: true, class:'form-check-input' %>
-        </div>
 
-      <div class="form-group">
-        <!-- <%= form.label :shareholder_address %> -->
-        <%= form.text_field :shareholder_address, id: :term_agreement_shareholder_address, class:'form-control' %>
-      </div>
+    <div class="form-group">
+      <p>I understand and agree that I must use a valid ERC20 compatible wallet address.</p>
+      <%= form.label :check_two do %>
+      <%= form.check_box :check_two, id: :check_two, disabled: true, class:'form-check-input' %>
+      <% end %>
+    </div>
+    <div class="form-group">
+      <p>I understand and agree that I am legally 18 years of age or older.</p>
+      <%= form.label :check_three do %>
+      <%= form.check_box :check_three, id: :check_three, disabled: true, class:'form-check-input' %>
+      <% end %>
+    </div>
+    <div class="form-group">
 
-        <div class="actions">
-          <%= form.submit(id:'terms-btn', class:'btn btn-primary', disabled:true, value:'Join our Sale') %>
-        </div>
-    <% end %>
+      <%= form.label "Check Four" do %>
+      <p>I understand and agree that the address I use must not be an exchange address.</p>
+      <%= form.check_box :check_three, id: :check_three, disabled: true, class:'form-check-input' %>
+      <% end %>
+    </div>
+  </div>
+<div class="form-group">
+  <!-- <%= form.label :shareholder_address %> -->
+  <label>Shareholder address</label>
+  <small class="form-text text-muted">Without the input of your address we won't honor the token</small>
+  <%= form.text_field :shareholder_address, id: :term_agreement_shareholder_address, class:'form-control' %>
+</div>
+
+  <div class="actions">
+    <%= form.submit(id:'terms-btn', class:'btn btn-primary', disabled:true, value:'Join our Sale') %>
+  </div>
+<% end %>

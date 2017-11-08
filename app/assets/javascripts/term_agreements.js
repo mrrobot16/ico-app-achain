@@ -5,6 +5,12 @@ var submitBtn = document.getElementById('terms-btn')
 var boxStatus = []
 if (termAgreements) {
   scrollSpy(termAgreements)
+  checkboxes.forEach(function(checkbox){
+    checkbox.addEventListener('click', function(){
+      console.log('CHECK')
+    })
+    checkbox.disabled=false
+  })
 }
 // Create logic where each time you check or uncheck a box
 //  he is gonna check if all box are checked or not all checked

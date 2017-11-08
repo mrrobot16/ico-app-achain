@@ -11,12 +11,18 @@
 .terms-text {
   padding-bottom: 5%;
   // width: 575px;
-  width: 50%;
+  // width: 50%;
 }
 
 .termsAndConditions {
   font-size: .9rem;
   color: #175a69;
+  .childList {
+      list-style: lower-alpha;
+  }
+  .stepIn {
+      padding-left: 1em;
+  }
 }
 
 .form-check-input {
@@ -28,14 +34,16 @@
   form {
     // width: 575px;
   }
-
+  h1 {
+    font-size: 1.5em;
+  }
   input[type="submit"]{
     width: 100%;
   }
 }
 
 .form-group {
-  padding-left: 3.5%;
+  // padding-left: 3.5%;
   p {
     margin:0;
   }

@@ -1,4 +1,10 @@
-<%= render 'form2', term_agreement: @term_agreement %>
-<!-- <div style="margin-top: 5%; margin-left: 5%;" class='terms-form'>
-  <%#= render 'form', term_agreement: @term_agreement %>
-</div> -->
+<!-- <%#= render 'form2', term_agreement: @term_agreement %> -->
+<div style="margin-top: 5%; margin-left: 5%;" class='terms-form'>
+  <div class="terms-text">
+        <%= render 'terms-text', term_agreement: @term_agreement %>
+  </div>
+  <h1>Auditchain Token Purchase Agreement</h1>
+  <p>Please review and confirm the GRID Token Purchase Agreement to proceed with the GRID Token Sale.</p>
+  
+  <%= render 'form', term_agreement: @term_agreement %>
+</div>
