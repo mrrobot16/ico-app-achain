@@ -2,9 +2,11 @@ const termAgreements = document.getElementById('terms')
 const submitBtn = document.getElementById('terms-btn')
 const checkboxes = Array.from(document.querySelectorAll("input[type='checkbox']"))
 const boxStatus = []
-if (termAgreements) scrollSpy()
+// if (termAgreements) scrollSpy()
 if(checkboxes) checkBoxChecked()
-
+checkboxes.map(function(checkbox){
+  checkbox.disabled=false
+})
 function scrollSpy(){
   termAgreements.addEventListener('scroll', finishedScroll)
 }
