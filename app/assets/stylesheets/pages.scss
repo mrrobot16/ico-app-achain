@@ -1,0 +1,153 @@
+body {
+  background-image: url('background.png')
+}
+
+.side-bar {
+  span {
+   display:block;
+   width:100%;
+   border-top: 1px solid red;
+
+}
+}
+.contract {
+  padding: 30%;
+  p {
+    color: #ffffff;
+  }
+}
+
+#section-1 {
+  h1 {
+    color:#ffffff;
+  }
+
+  p {
+    color: #438f79;
+  }
+  #countdown {
+    label {
+      color: #9b9b9b;
+    }
+    p {
+      color: #61c7a6;
+    }
+    span {
+      color:#ffffff;
+    }
+
+    .join-whitelist {
+      button {
+        background: transparent;
+        border: none;
+      }
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .buttons {
+    button {
+      background: transparent;
+      border: solid 2px #505556 !important;
+      border-radius: 10px;
+    }
+    a {
+    color: #61c7a6 !important;
+    }
+  }
+}
+
+// #fp-nav {
+//   position: fixed;
+//   z-index: 100;
+//   margin-top: -32px;
+//   top: 50%;
+//   opacity: 1;
+//   -webkit-transform: translateZ(0);
+//   a {
+//     animation: q .7s 5.8s both;
+//   }
+
+// }
+
+#fp-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+      // ul {
+      //   list-style: none;
+      //   margin: 0;
+      //   padding: 0;
+      // }
+}
+
+#fp-nav.right {
+    right: 5%;
+}
+
+#fp-nav ul li {
+    height: auto;
+    width: auto;
+    margin: 0 0 .8em;
+    // list-style: none;
+}
+
+#fp-nav ul li a {
+  border-radius: 0;
+height: 19px;
+width: 19px;
+position: relative;
+outline: none;
+}
+fp-nav ul li a, .fp-slidesNav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#fp-nav ul li a.active:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 4px;
+    left: 7px;
+    border: 1px solid #04a997;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+#fp-nav ul li a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    top: 9px;
+    left: 0;
+    height: 1px;
+    background-color: #a3a3a3;
+    transition: background-color .2s;
+}
+
+#fp-nav ul li a {
+  width: 19px;
+  top: 9px;
+  left: 0;
+  height: 1px;
+  transition: background-color .2s;
+}
+
+
+.right {
+  right: 17px;
+}
