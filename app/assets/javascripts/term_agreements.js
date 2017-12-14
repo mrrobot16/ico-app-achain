@@ -1,12 +1,12 @@
 const termAgreements = document.getElementById('terms')
 const submitBtn = document.getElementById('terms-btn')
 const checkboxes = Array.from(document.querySelectorAll("input[type='checkbox']"))
+const shareholderAddress = document.getElementById('term_agreement_shareholder_address')
 const boxStatus = []
-// if (termAgreements) scrollSpy()
-if(checkboxes) checkBoxChecked()
-checkboxes.map(function(checkbox){
-  checkbox.disabled=false
-})
+if (shareholderAddress) checkShareholderAddress()
+if (termAgreements) scrollSpy()
+if (checkboxes) checkBoxChecked()
+
 function scrollSpy(){
   termAgreements.addEventListener('scroll', finishedScroll)
 }
@@ -38,4 +38,11 @@ function checkBoxes(){
 
 function enableButton(){
   boxStatus.length === checkboxes.length ? submitBtn.disabled=false : submitBtn.disabled=true
+}
+
+function checkShareholderAddress(){
+  shareholderAddress.addEventListener('input', function(event){
+    // console.log('event: ', event)
+    if(event.target.value.length === 40) console.log('EUREKA')
+  })
 }

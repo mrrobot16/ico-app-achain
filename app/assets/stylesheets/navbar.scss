@@ -1,62 +1,33 @@
-.ico-menu {
-  font-family: 'raleway',arial, helvetica;
-  font-size: 12px;
-  font-weight:bold;
-  float: left;
-  margin-bottom: 1em;
-  text-align:left;
-  text-transform:uppercase;
-  letter-spacing : 0.2em;
-  * {
-    margin: 0;
-  	padding: 0;
-  	list-style: none;
-  }
-
-  li {
+  header {
     position: relative;
-    white-space: nowrap;
-    float: left;
-    /* Maybe for IE */
-    /**white-space: normal; */
+    top: 2em;
+    padding-bottom: 15%;
   }
-
-  li:nth-child(1) {
-    float: left;
-  }
-
-  ul {
-    position: absolute;
-  	display: none;
-  	top: 100%;
-  	left: 0;
-  	z-index: 99;
-    min-width: 12em;
-    *width: 12em;
-    font-size: 10px;
-    font-weight:normal;
-    top:-200px;
-    padding-bottom: 20px;
-    a {
-      color:#999;
-      padding: 0.2em 1em;
+  .main-menu {
+    .logo {
+      float: left;
     }
-    a:hover {
-      color: #89f2b9;
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      float: right;
+      list-style-type: none;
+      margin-top: 3.39%;
+      li {
+        margin-right: 10%;
+      }
+      // li:after {
+      //   background-color: red;
+      // }
+      a {
+        color: #ffffff;
+      }
+      a:after {
+        background-color: red;
+      }
+    }
+    .active {
+      text-decoration: underline;
+      text-decoration-color: #61c7a6;
     }
   }
-
-  ul li {
-    background: #AABDE6;
-  }
-
-  a {
-    color: #ababab;
-    display: block;
-  	position: relative;
-    padding: .75em 1em;
-  	text-decoration: none;
-  	zoom: 1;
-  }
-
-}
