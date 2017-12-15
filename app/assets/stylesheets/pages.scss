@@ -1,5 +1,6 @@
 body {
-  background-image: url('https://i.imgur.com/xiWuu4r.jpg')
+  // background-image: url('https://i.imgur.com/xiWuu4r.jpg')
+  background-color: black;
 }
 
 .side-bar {
@@ -7,7 +8,6 @@ body {
    display:block;
    width:100%;
    border-top: 1px solid red;
-
 }
 }
 .contract {
@@ -16,8 +16,12 @@ body {
     color: #ffffff;
   }
 }
-
+section {
+  max-width: 980px;
+margin: 0 auto!important;
+}
 #section-1 {
+  background-image: url('https://i.imgur.com/xiWuu4r.jpg');
   h1 {
     color:#ffffff;
   }
@@ -59,18 +63,50 @@ body {
   }
 }
 
-// #fp-nav {
-//   position: fixed;
-//   z-index: 100;
-//   margin-top: -32px;
-//   top: 50%;
-//   opacity: 1;
-//   -webkit-transform: translateZ(0);
-//   a {
-//     animation: q .7s 5.8s both;
-//   }
+#section-2 {
+  background-image: url('https://i.imgur.com/xiWuu4r.jpg');
+  h1 {
+    margin-top: 10%;
+    // color:#61c7a6s;
+    color:#438f79;
+  }
 
-// }
+  p {
+    // color: #438f79;
+    color:#afb4b6;
+  }
+  #countdown-2 {
+    label {
+      color: #9b9b9b;
+    }
+    p {
+      color: #61c7a6;
+    }
+    span {
+      color:#ffffff;
+    }
+
+    .join-whitelist {
+      button {
+        background: transparent;
+        border: none;
+      }
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+  .buttons {
+    button {
+      background: transparent;
+      border: solid 2px #505556 !important;
+      border-radius: 10px;
+    }
+    a {
+    color: #61c7a6 !important;
+    }
+  }
+}
 
 #fp-nav {
     position: fixed;
@@ -114,17 +150,19 @@ fp-nav ul li a, .fp-slidesNav ul li a {
     text-decoration: none;
 }
 
-#fp-nav ul li a.active:before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 11px;
-    height: 11px;
-    top: 4px;
-    left: 7px;
-    border: 1px solid #04a997;
-    border-radius: 50%;
-    z-index: -1;
+#fp-nav ul li a.active:after {
+    background-color:#04a997;
+    // content: '';
+    // display: block;
+    // position: absolute;
+    // width: 11px;
+    // height: 11px;
+    // top: 4px;
+    // left: 7px;
+    // border: 1px solid #04a997;
+    // border-radius: 50%;
+    // z-index: -1;
+    // color: #04a997;
 }
 
 #fp-nav ul li a:after {
