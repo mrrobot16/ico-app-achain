@@ -1,35 +1,50 @@
-  header {
-    position: relative;
-    top: 2em;
-    padding-bottom: 15%;
-    max-width: 980px;
-    margin: 0 auto!important;
+header {
+  position: fixed;
+  top: 2em;
+  padding-bottom: 15%;
+  max-width: 980px;
+  margin: 0 auto !important
+}
+
+.header-container {
+  position: absolute;
+  width: 100vw;
+}
+
+.header-container-child {
+  position: relative;
+}
+
+.main-menu {
+  .logo {
+    float: left;
   }
-  .main-menu {
-    .logo {
-      float: left;
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    float: right;
+    list-style-type: none;
+    width: 400px;
+    margin-top: 2.39%;
+    margin-right: 30px;
+    li {
+      margin-right: 10%;
+      font-weight: 300;
+      font-family: Barlow Condensed;
+      font-size: 20px;
+      color: #FFFFFF;
+      letter-spacing: 1.14px;
     }
-    ul {
-      display: flex;
-      justify-content: space-evenly;
-      float: right;
-      list-style-type: none;
-      margin-top: 3.39%;
-      li {
-        margin-right: 10%;
-      }
-      // li:after {
-      //   background-color: red;
-      // }
-      a {
-        color: #ffffff;
-      }
-      a:after {
-        background-color: red;
-      }
+    a {
+      color: #ffffff;
+    }
+    a:after {
+      background-color: red
     }
     .active {
       text-decoration: underline;
-      text-decoration-color: #61c7a6;
+      -webkit-text-decoration-color: #61c7a6;
+      text-decoration-color: #61c7a6
     }
   }
+}
