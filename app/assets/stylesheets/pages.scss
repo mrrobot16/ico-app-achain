@@ -159,17 +159,144 @@
   }
 }
 
-#section-2 h1 {
-  font-family: 'Barlow';
-  font-size: 42px;
-  color: #61c7a6;
-  letter-spacing: -0.2px;
-  line-height: 54px;
+#section-2 {
+  margin-top: 0%;
+  background-color: #04213c;
+  // background-image: url('https://i.imgur.com/jpUbIxG.jpg)');
+  background-size: cover;
+  // height: 100vh;
+  height:100%;
+  // .home-container {
+  //   padding-top: 20px;
+  // }
+  // h1 {
+  //   font-family: 'Barlow';
+  //   font-size: 42px;
+  //   color: #61c7a6;
+  //   letter-spacing: -0.2px;
+  //   line-height: 54px;
+  //   font-weight: 300;
+  // }
+  // p {
+  //   color: #438f79;
+  // }
+  // .counter {
+  //   display: inline;
+  //   float: left;
+  //   margin-right: 20px;
+  //   label {
+  //     display: block;
+  //     font-family: Barlow;
+  //     font-weight: 400;
+  //     text-transform: UPPERCASE !important;
+  //     font-size: 17px;
+  //     color: #9B9B9B;
+  //     letter-spacing: 3.61px;
+  //   }
+  // }
+  //
+  // .counter#count-seconds {
+  //   display: block;
+  //   float: none;
+  // }
+  //
+  // .count-number {
+  //   font-family: 'Barlow';
+  //   font-size: 80px;
+  //   color: #FFFFFF;
+  //   letter-spacing: -0.48px;
+  // }
+  //
+  // .join-container {
+  //   display: inline-block;
+  //   margin: 30 0;
+  // }
+  //
+  // .join-container:after {
+  //   content: '';
+  //   display: block;
+  //   position: absolute;
+  //   left: 0;
+  //   margin-top: 5px;
+  //   width: 311px;
+  //   max-width: 100%;
+  //   height: 2px;
+  //   background-color: #22C6A6;
+  //   -webkit-transition: ease .4s all;
+  //   transition: ease .4s all;
+  // }
+  //
+  // .join-button a {
+  //   padding: 0 !important;
+  //   font-family: 'Barlow';
+  //   font-weight: 500;
+  //   font-size: 20px;
+  //   color: #FFFFFF;
+  //   letter-spacing: 1.4px;
+  //   -webkit-transition: ease .4s all;
+  //   transition: ease .4s all;
+  // }
+  //
+  // .join-button a:hover {
+  //   text-decoration: none;
+  //   color: #22C6A6;
+  // }
+  //
+  //
+  // .countdown {
+  //   label {
+  //     color: #9b9b9b;
+  //   }
+  //
+  //   p {
+  //     color: #61c7a6;
+  //   }
+  //
+  //   span {
+  //     color: #ffffff;
+  //   }
+  //   .countdown .join-whitelist button {
+  //     background: transparent;
+  //     border: none;
+  //   }
+  //   a {
+  //     color: #ffffff;
+  //   }
+  // }
+  //
+  // .buttons {
+  //   a {
+  //     color: #61c7a6 !important;
+  //   }
+  //   button {
+  //     /*opacity: 0.31;*/
+  //     border: 1px solid #FFFFFF;
+  //     border-radius: 10px;
+  //     background: none;
+  //     padding: 6px;
+  //     padding-left: 20px;
+  //     padding-right: 20px;
+  //     font-family: 'Barlow Condensed';
+  //     font-weight: 700;
+  //     font-size: 14px;
+  //     color: #22C6A6;
+  //     letter-spacing: 0.8px;
+  //     margin-right: 15px;
+  //   }
+  // }
 }
 
-#section-2 p {
-  color: #b3b9bb;
-}
+// #section-2 h1 {
+//   font-family: 'Barlow';
+//   font-size: 42px;
+//   color: #61c7a6;
+//   letter-spacing: -0.2px;
+//   line-height: 54px;
+// }
+//
+// #section-2 p {
+//   color: #b3b9bb;
+// }
 
 // Fixed Right nav bar
 #fp-nav {
