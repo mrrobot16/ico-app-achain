@@ -14,3 +14,10 @@ var counter = setInterval(function() {
   }
   distance < 0 ? clearInterval(counter) : ''
 }, 1000);
+var mySideNav = document.getElementById("mySideNav") ? document.getElementById("mySideNav") : ''
+function openNav(){
+    mySideNav.style.height="100vh";
+}
+function closeNav(){
+    mySideNav.style.height="0";
+}

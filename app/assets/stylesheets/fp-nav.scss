@@ -1,0 +1,36 @@
+#fp-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: 0;
+  top: 30%;
+  opacity: 1;
+  right: 0px;
+  ul li {
+    margin: 0 0 0.8em;
+    a {
+      border-radius: 0;
+      left: -27px;
+      position: relative;
+      outline: none;
+      -webkit-transition: background-color .2s;
+      transition: background-color .2s;
+    }
+    a.active:after {
+      background-color: #04a997;
+      left: -19px;
+      width: 52px;
+    }
+    a:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 28px;
+      top: 9px;
+      left: 0px;
+      height: 1px;
+      background-color: #a3a3a3;
+      -webkit-transition: background-color .2s;
+      transition: background-color .2s;
+    }
+  }
+}

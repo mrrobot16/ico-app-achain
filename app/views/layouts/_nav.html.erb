@@ -1,29 +1,45 @@
 <header>
-  <div class="header-container">
-  <div class="nav-bar">
-    <nav class="main-menu">
-     <div class="logo coll-left">
-        <img src="https://auditchain.com/wp-content/uploads/2017/09/logo-white.png" alt="Auditchain logo">
-
+  <div id="mySideNav" class="sideNav">
+    <div class="header-container">
+      <div class="logo coll-left">
+        <img class="logo-img" src="https://auditchain.com/wp-content/uploads/2017/09/logo-white.png" alt="Auditchain">
       </div>
-      <ul>
-        <li class="">
-          <a class="active" href="/">HOME</a>
-        </li>
-        <li class="">
-          <a class="" href="#about">ABOUT</a>
-        </li>
-        <li class="">
-          <a class="" href="#tokens">TOKENS</a>
-        </li>
-        <li id="" class="">
-          <a class="" href="#team">TEAM</a>
-        </li>
-        <li id="" class="">
-          <a class="" href="#contact">CONTACT</a>
-        </li>
+      <div class="nav-right">
+        <div id="mobile-show">
+          <a href="javascript:void(0)" onclick="closeNav()"><div class="icon-menu pe-7s-menu pe-3x pe-va"></div></a>
+        </div>
+      </div>
+      <ul class="mobile-nav-ul">
+        <li class="mobile-nav-links"><a class="active" href="#home">HOME</a></li>
+        <li class="mobile-nav-links"><a class="" href="#about">ABOUT</a></li>
+        <li class="mobile-nav-links"><a class="" href="#tokens">TOKENS</a></li>
+        <li class="mobile-nav-links"><a class="" href="#team">TEAM</a></li>
+        <li class="mobile-nav-links"><a class="" href="#contact">CONTACT</a></li>
       </ul>
-    </nav>
+    </div>
   </div>
+
+<div class="header-container">
+<div class="nav-bar">
+  <nav class="main-menu">
+    <div class="logo coll-left">
+      <img class="logo-img" src="https://auditchain.com/wp-content/uploads/2017/09/logo-white.png" alt="Auditchain">
+    </div>
+    <div class="nav-right">
+      <div id="mobile-show">
+        <a href="javascript:void(0)" onclick="openNav()"><div class="icon-menu pe-7s-menu pe-3x pe-va"></div></a>
+      </div>
+    </div>
+      <ul>
+        <li class="nav-links"><a class="active" href="#home">HOME</a></li>
+        <li class="nav-links"><a class="" href="#about">ABOUT</a></li>
+        <li class="nav-links"><a class="" href="#tokens">TOKENS</a></li>
+        <li class="nav-links"><a class="" href="#team">TEAM</a></li>
+        <li class="nav-links"><a class="" href="#contact">CONTACT</a></li>
+      </ul>
+  </nav>
 </div>
+
+</div>
+
 </header>
